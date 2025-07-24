@@ -7,6 +7,26 @@ A simple notes REST API built with Spring Boot, following Astrapay's backend con
 
 When the application starts for the first time, it will automatically create 6 initial notes. This initialization is handled in the `NoteInitializer` class.
 
+## Application Screenshots
+
+### a. Successful Validation
+![Successful Validation](./screenshots/success_create_note_validation.png)
+
+### b. Postman - GET /notes
+![GET Notes](./screenshots/postman_get_all_notes.png)
+
+### c. Postman - POST /notes
+![GET Notes](./screenshots/postman_create_note.png)
+
+### d. Postman - DELETE /notes/{id}
+![GET Notes](./screenshots/postman_delete_note.png)
+
+### ️ e. Empty Notes List
+![Empty Notes List](./screenshots/list_empty_note.png)
+
+### e. Notes List with 6 Items
+![Notes List with 6 Items](./screenshots/list_all_note.png)
+
 ## How to Run
 1. Ensure you have Java 11+ and Maven installed.
 2. Open a terminal in the project root directory.
