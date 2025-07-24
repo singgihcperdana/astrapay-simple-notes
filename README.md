@@ -16,6 +16,18 @@ When the application starts for the first time, it will automatically create 6 i
    ```
 4. The application will run on port 8080 by default.
 
+## Run with Docker
+1. Make sure you have Docker installed.
+2. Build the Docker image:
+   ```
+   docker build -t astrapay-simple-notes .
+   ```
+3. Run the Docker container:
+   ```
+   docker run -p 8080:8080 astrapay-simple-notes
+   ```
+4. The application will be accessible at [http://localhost:8080](http://localhost:8080)
+
 ## Features
 - **Create a note**: `POST /notes` (with content and type)
 - **List all notes**: `GET /notes`
