@@ -68,7 +68,7 @@ public class NoteController {
     ApiResponse<Void> successResponse =
         ApiResponse.<Void>builder().success(true).message("Note deleted successfully").data(null)
             .build();
-    return ResponseEntity.status(204).body(successResponse);
+    return ResponseEntity.status(200).body(successResponse);
   }
 
 }
