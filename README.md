@@ -38,3 +38,23 @@ When the application starts for the first time, it will automatically create 6 i
 - After starting the application, open your browser and go to:
   [http://localhost:8080/swagger-ui/](http://localhost:8080/swagger-ui/)
   to view and test the API documentation interactively.
+
+## How to Run the UI (Frontend)
+You can run the Angular-based UI to interact with the backend:
+1. Clone the frontend repository:
+   https://github.com/singgihcperdana/astrapay-simple-notes-ui
+2. Open a terminal in the frontend project directory.
+3. Install dependencies:
+    ```
+    npm install
+    ```
+4. Start the application:
+    ```
+    npm start
+    # or
+    npx ng serve
+   ```
+5. Open your browser at:
+  http://localhost:4200
+
+> For more detailed setup and customization, please follow the full instructions in the frontend repository.
