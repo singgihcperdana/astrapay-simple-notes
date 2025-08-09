@@ -93,7 +93,7 @@ class NoteControllerIntegrationTest {
     String id = objectMapper.readTree(response).path("data").path("id").asText();
 
     // Delete note
-    mockMvc.perform(delete("/notes/{id}", id)).andExpect(status().isNoContent())
+    mockMvc.perform(delete("/notes/{id}", id)).andExpect(status().isOk())
         .andExpect(jsonPath("$.success", is(true)))
         .andExpect(jsonPath("$.message", containsString("deleted")));
   }
